@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CarouselExample from './CarouselExample';
+import ImageSlider from './components/ImageSlider';
+import { SliderData } from './components/SliderData';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>This is Carousel Implementation using Material UI</h2>
+
+      <div>
+        <CarouselExample/> 
+      </div>
+
+      <div>
+        <h2>This is Carousel Implementation with React Icons, not MUI</h2>
+          return <ImageSlider slides={SliderData} />;
+      </div>
+
     </div>
+    
   );
 }
 
